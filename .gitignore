@@ -1,0 +1,35 @@
+# Archivos de log y cache de Minecraft
+logs/
+cache/
+usercache.json
+usernamecache.json
+banned-players.json
+banned-ips.json
+ops.json
+white-list.json
+
+# El JAR del servidor y los de los plugins. ¡Nunca subas los JAR!
+# Cada colaborador debe descargarlos por su cuenta.
+server.jar
+plugins/*.jar
+
+# ¡NUNCA subas los mundos! Son bases de datos enormes y cambian constantemente.
+world/
+world_nether/
+world_the_end/
+
+# Bases de datos y archivos de datos de jugadores/plugins
+*.db
+*.db-journal
+playerdata/
+advancements/
+stats/
+
+# Archivos de configuración que pueden contener datos sensibles o que no se deben versionar
+eula.txt
+server.properties
+
+# Carpetas de datos de plugins específicos (ejemplos)
+plugins/Dynmap/
+plugins/LuckPerms/
+plugins/GriefPreventionData/
