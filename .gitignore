@@ -1,35 +1,113 @@
-# Archivos de log y cache de Minecraft
-logs/
+# Paper/Spigot generated files
+libraries/
+versions/
+version_history.json
 cache/
+.folia/
+.paper/
+
+# Server runtime files
+server.properties
+eula.txt
 usercache.json
 usernamecache.json
-banned-players.json
 banned-ips.json
+banned-players.json
 ops.json
-white-list.json
+whitelist.json
 
-# El JAR del servidor y los de los plugins. ¡Nunca subas los JAR!
-# Cada colaborador debe descargarlos por su cuenta.
-server.jar
-plugins/*.jar
+# Logs
+logs/
+*.log
+*.log.*
 
-# ¡NUNCA subas los mundos! Son bases de datos enormes y cambian constantemente.
+# World data (comment out if you want to track worlds)
 world/
 world_nether/
 world_the_end/
+*/playerdata/
+*/stats/
+*/advancements/
 
-# Bases de datos y archivos de datos de jugadores/plugins
-*.db
-*.db-journal
-playerdata/
-advancements/
-stats/
-
-# Archivos de configuración que pueden contener datos sensibles o que no se deben versionar
-eula.txt
-server.properties
-
-# Carpetas de datos de plugins específicos (ejemplos)
+# Plugin data and configs (keep config templates, ignore runtime data)
+plugins/*/data/
+plugins/*/playerdata/
+plugins/*/logs/
+plugins/*/tmp*/
+plugins/*/cache/
+plugins/AuthMe/authme.log
+plugins/spark/tmp-client/
 plugins/Dynmap/
 plugins/LuckPerms/
 plugins/GriefPreventionData/
+
+# Server JARs (download manually)
+*.jar
+!paper-*.jar
+
+# Databases
+*.db
+*.db-journal
+
+# Backups
+backups/
+*.backup
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Crash reports
+crash-reports/
+hs_err_pid*.log
+
+# Claude Code specific files
+.claude*
+
+# Plugin configurations that might contain sensitive data
+plugins/*/database.yml
+plugins/*/mysql.yml
+plugins/*/config.yml.bak
+plugins/*/config.yml.old
+
+# Permissions and economy data
+permissions.yml.bak
+luckperms/
+vault/
+
+# Additional world types
+world_*/
+DIM*/
+minecraft_*/
+
+# Modded server files (if applicable)
+mods/
+coremods/
+config/
+scripts/
+local/
+saves/
+
+# Build tools
+BuildTools.jar
+BuildData/
+
+# Paper specific
+paper.yml
+paper-global.yml
+paper-world-defaults.yml
