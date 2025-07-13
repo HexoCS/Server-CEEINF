@@ -1,0 +1,175 @@
+header-footer:
+  enabled: true
+  header:
+    - '&f&lStackOverworld &8- &7Survival'
+    - ''
+    - '&7Online: &e%online% &8| &7TPS: &a%server_tps_1_colored% &8| &7Ping: &8%ping%ms'
+    - '&7Claim: &e%scs_claim_name% &8(&7Dueño: &a%scs_claim_owner%&8)'
+    - ''
+  footer:
+    - ''
+    - '&7Tus claims: &6%scs_player_claims_count%&7/&6%scs_player_max_claims% &8| &7Restantes: &e%scs_player_remain_claims%'
+    - ''
+    - ''
+    - '&7made by @ceeinf'
+
+tablist-name-formatting:
+  enabled: true
+
+scoreboard-teams:
+  enabled: true
+  enable-collision: true
+  invisible-nametags: false
+  sorting-types:
+    - "GROUPS:owner,admin,moderador,helper,vip,premium,default"
+    - "PLACEHOLDER_A_TO_Z:%player%"
+  case-sensitive-sorting: true
+  can-see-friendly-invisibles: false
+
+playerlist-objective:
+  enabled: true
+  value: '%ping%'
+  fancy-value: '&8%ping%ms'
+  title: '&f&lStackOverworld'
+  render-type: INTEGER
+
+belowname-objective:
+  enabled: true
+  value: '%health%'
+  title: '&c❤'
+  fancy-value: '&c%health%'
+  fancy-value-default: '&7NPC'
+
+prevent-spectator-effect:
+  enabled: true
+
+bossbar:
+  enabled: false
+
+scoreboard:
+  enabled: true
+  toggle-command: /sb
+  remember-toggle-choice: true
+  hidden-by-default: false
+  use-numbers: false
+  static-number: 0
+  delay-on-join-milliseconds: 500
+  scoreboards:
+    scoreboard:
+      title: '&f&lStackOverworld'
+      lines:
+        - ''
+        - '&6🌍 &fServidor:'
+        - '&7• Online: &e%online%'
+        - '&7• TPS: &a%server_tps_1_colored%'
+        - '&7• Ping: &8%ping%ms'
+        - ''
+        - '&6📍 &fUbicación:'
+        - '&7• Mundo: &a%world%'
+        - '&7• Coords: &f%player_x%&7, &f%player_y%&7, &f%player_z%'
+        - ''
+        - '&7made by @ceeinf'
+
+layout:
+  enabled: false
+
+ping-spoof:
+  enabled: false
+
+placeholders:
+  date-format: "dd/MM/yyyy"
+  time-format: "[HH:mm:ss]"
+  time-offset: 0
+  register-tab-expansion: true
+
+placeholder-output-replacements:
+  '%scs_claim_name%':
+    "": '&7Tierra salvaje'
+    "null": '&7Tierra salvaje'
+    "none": '&7Tierra salvaje'
+  '%scs_claim_owner%':
+    "": '&7Nadie'
+    "null": '&7Nadie'
+    "none": '&7Nadie'
+  '%scs_claim_members_count%':
+    "": '0'
+    "null": '0'
+  '%scs_claim_members_online%':
+    "": '0'
+    "null": '0'
+  '%scs_player_claims_count%':
+    "": '0'
+    "null": '0'
+  '%scs_player_max_claims%':
+    "": '∞'
+    "null": '∞'
+  '%scs_player_remain_claims%':
+    "": '∞'
+    "null": '∞'
+  '%scs_player_remain_chunks%':
+    "": '∞'
+    "null": '∞'
+  '%server_tps_1_colored%':
+    "": '&aDesconocido'
+
+conditions: {}
+
+placeholder-refresh-intervals:
+  default-refresh-interval: 1000
+  '%player_ping%': 1000
+  '%player_health%': 500
+  '%server_tps_1_colored%': 1000
+  '%player_x%': 1000
+  '%player_y%': 1000
+  '%player_z%': 1000
+  '%world%': 2000
+  '%online%': 1000
+  '%scs_claim_name%': 2000
+  '%scs_claim_owner%': 2000
+  '%scs_claim_members_count%': 3000
+  '%scs_claim_members_online%': 2000
+  '%scs_player_claims_count%': 5000
+  '%scs_player_max_claims%': 10000
+  '%scs_player_remain_claims%': 5000
+  '%scs_player_remain_chunks%': 5000
+
+assign-groups-by-permissions: false
+
+primary-group-finding-list:
+  - Owner
+  - Admin
+  - Moderador
+  - Helper
+  - VIP
+  - Premium
+  - default
+
+permission-refresh-interval: 1000
+
+debug: false
+
+mysql:
+  enabled: false
+
+proxy-support:
+  enabled: false
+
+########################################################################
+# BUKKIT ONLY - THE FOLLOWING SECTION IS ONLY FOR BACKEND INSTALLATION #
+########################################################################
+
+per-world-playerlist:
+  enabled: false
+
+compensate-for-packetevents-bug: false
+
+#####################################################################
+# PROXY ONLY - THE FOLLOWING SECTION IS ONLY FOR PROXY INSTALLATION #
+#####################################################################
+
+global-playerlist:
+  enabled: false
+  update-latency: false
+
+use-bukkit-permissions-manager: false
+use-online-uuid-in-tablist: true

@@ -30,16 +30,16 @@ world_the_end/
 */advancements/
 
 # Plugin data and configs (keep config templates, ignore runtime data)
-plugins/*/data/
-plugins/*/playerdata/
-plugins/*/logs/
-plugins/*/tmp*/
-plugins/*/cache/
-plugins/AuthMe/authme.log
-plugins/spark/tmp-client/
-plugins/Dynmap/
-plugins/LuckPerms/
-plugins/GriefPreventionData/
+# plugins/*/data/
+# plugins/*/playerdata/
+# plugins/*/logs/
+# plugins/*/tmp*/
+# plugins/*/cache/
+# plugins/AuthMe/authme.log
+# plugins/spark/tmp-client/
+# plugins/Dynmap/
+# plugins/LuckPerms/
+# plugins/GriefPreventionData/
 
 # Server JARs (download manually)
 *.jar
@@ -80,15 +80,15 @@ hs_err_pid*.log
 .claude*
 
 # Plugin configurations that might contain sensitive data
-plugins/*/database.yml
-plugins/*/mysql.yml
-plugins/*/config.yml.bak
-plugins/*/config.yml.old
+# plugins/*/database.yml
+# plugins/*/mysql.yml
+# plugins/*/config.yml.bak
+# plugins/*/config.yml.old
 
 # Permissions and economy data
-permissions.yml.bak
-luckperms/
-vault/
+# permissions.yml.bak
+# luckperms/
+# vault/
 
 # Additional world types
 world_*/

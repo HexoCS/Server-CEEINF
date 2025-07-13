@@ -1,0 +1,329 @@
+General:
+  Prefix: "&f^&lStackOverflow &c&lAdmin& &r"
+  NoPerms: "&c¡No tienes permisos para eso!"
+  LayoutNotFound: "&cNo existe el layout &e%NAME%"
+  TimeLayoutD: "%D% días, %H%h %M%min %S%seg"
+  TimeLayoutH: "%H% horas, %M%min %S%seg"
+  TimeLayoutM: "%M%min %S%seg"
+  TimeLayoutS: "%S% segundos"
+  FailedFetch: "&cError al obtener UUID de &e%NAME%&c. Revisa la consola."
+
+Ban:
+  Usage: "&cUso &8» &7/ban (-s) [jugador] [razón/@layout]"
+  Done: "&a✓ &e%NAME% &7ha sido baneado correctamente"
+  AlreadyDone: "&c⚠ &e%NAME% &7ya está baneado"
+  Exempt: "&cNo puedes banear a &e%NAME%"
+  Layout:
+    - '&8&m                                                    '
+    - '&f&lStackOverworld'
+    - '&c&l🚫 BANEADO PERMANENTEMENTE'
+    - '&8&m                                                    '
+    - ''
+    - "&cRazón &8» &7%REASON%"
+    - ''
+    - "&7Para solicitar desbaneo:"
+    - "&e• Discord del servidor"
+    - "&e• Instagram @ceeinf"
+    - ''
+    - '&8&m                                                    '
+  Notification:
+    - "&c🔨 &e%NAME% &7fue baneado por &a%OPERATOR%"
+    - "&7Razón: &f%REASON%"
+  UndoNotification: "&a✓ &e%NAME% &7fue desbaneado por &a%OPERATOR%"
+
+Ipban:
+  Usage: "&cUso &8» &7/banip (-s) [jugador/IP] [razón/@layout]"
+  Layout:
+    - '&8&m                                                    '
+    - '&f&lStackOverworld'
+    - '&c&l🚫 IP BANEADA PERMANENTEMENTE'
+    - '&8&m                                                    '
+    - ''
+    - "&cRazón &8» &7%REASON%"
+    - ''
+    - "&7Para solicitar desbaneo:"
+    - "&e• Discord del servidor"
+    - "&e• Instagram @ceeinf"
+    - ''
+    - '&8&m                                                    '
+  Notification:
+    - "&c🔨 &e%NAME% &7(IP) fue baneado por &a%OPERATOR%"
+    - "&7Razón: &f%REASON%"
+  IpNotCached: "&cNo hay IP registrada para &e%NAME%"
+
+Tempban:
+  Usage: "&cUso &8» &7/tempban (-s) [jugador] [tiempo] [razón/@layout]"
+  MaxDuration: "&cDuración máxima: &e%MAX% &csegundos"
+  Layout:
+    - '&8&m                                                    '
+    - '&6&l⏰ BANEADO TEMPORALMENTE'
+    - '&8&m                                                    '
+    - ''
+    - "&cRazón &8» &7%REASON%"
+    - "&6Duración &8» &e%DURATION%"
+    - ''
+    - "&7Para solicitar desbaneo:"
+    - "&e• Discord del servidor"
+    - "&e• Instagram @ceeinf"
+    - ''
+    - '&8&m                                                    '
+  Notification:
+    - "&6🕒 &e%NAME% &7fue baneado temporalmente por &a%OPERATOR%"
+    - "&7Razón: &f%REASON%"
+    - "&7Duración: &e%DURATION%"
+
+Tempipban:
+  Usage: "&cUso &8» &7/tempipban (-s) [jugador/IP] [tiempo] [razón/@layout]"
+  MaxDuration: "&cDuración máxima: &e%MAX% &csegundos"
+  Layout:
+    - '&8&m                                                    '
+    - '&6&l⏰ IP BANEADA TEMPORALMENTE'
+    - '&8&m                                                    '
+    - ''
+    - "&cRazón &8» &7%REASON%"
+    - "&6Duración &8» &e%DURATION%"
+    - ''
+    - "&7Para solicitar desbaneo:"
+    - "&e• Discord del servidor"
+    - "&e• Instagram @ceeinf"
+    - ''
+    - '&8&m                                                    '
+  Notification:
+    - "&6🕒 &e%NAME% &7(IP) fue baneado temporalmente por &a%OPERATOR%"
+    - "&7Razón: &f%REASON%"
+    - "&7Duración: &e%DURATION%"
+
+Mute:
+  Usage: "&cUso &8» &7/mute (-s) [jugador] [razón/@layout]"
+  Done: "&a✓ &e%NAME% &7ha sido silenciado correctamente"
+  AlreadyDone: "&c⚠ &e%NAME% &7ya está silenciado"
+  Exempt: "&cNo puedes silenciar a &e%NAME%"
+  Layout:
+    - '&8[&6ADMIN&8] &c🔇 Has sido silenciado permanentemente'
+    - "&cRazón &8» &7%REASON%"
+  Notification:
+    - "&c🔇 &e%NAME% &7fue silenciado por &a%OPERATOR%"
+    - "&7Razón: &f%REASON%"
+  UndoNotification: "&a✓ &e%NAME% &7fue desilenciado por &a%OPERATOR%"
+
+Tempmute:
+  Usage: "&cUso &8» &7/tempmute (-s) [jugador] [tiempo] [razón/@layout]"
+  MaxDuration: "&cDuración máxima: &e%MAX% &csegundos"
+  Layout:
+    - '&8[&6ADMIN&8] &6🔇 Silenciado por &e%DURATION%'
+    - "&cRazón &8» &7%REASON%"
+  Notification:
+    - "&6🕒 &e%NAME% &7fue silenciado temporalmente por &a%OPERATOR%"
+    - "&7Razón: &f%REASON%"
+    - "&7Duración: &e%DURATION%"
+
+Warn:
+  Usage: "&cUso &8» &7/warn (-s) [jugador] [razón/@layout]"
+  Done: "&a✓ &e%NAME% &7ha sido amonestado correctamente"
+  Exempt: "&cNo puedes amonestar a &e%NAME%"
+  Layout:
+    - '&8[&6ADMIN&8] &e⚠ Has recibido una amonestación'
+    - "&cRazón &8» &7%REASON%"
+    - '&7Amonestaciones totales: &c%COUNT%'
+  Notification:
+    - "&e⚠ &e%NAME% &7fue amonestado por &a%OPERATOR%"
+    - "&7Razón: &f%REASON%"
+
+Note:
+  Usage: "&cUso &8» &7/note (-s) [jugador] [nota]"
+  Done: "&a✓ Nota añadida a &e%NAME%"
+  Exempt: "&cNo puedes añadir notas a &e%NAME%"
+  Notification:
+    - "&7📝 Nota añadida a &e%NAME% &7por &a%OPERATOR%"
+    - "&7Contenido: &f%REASON%"
+
+Tempwarn:
+  Usage: "&cUso &8» &7/tempwarn (-s) [jugador] [tiempo] [razón/@layout]"
+  MaxDuration: "&cDuración máxima: &e%MAX% &csegundos"
+  Layout:
+    - '&8[&6ADMIN&8] &6⚠ Amonestación temporal'
+    - "&cRazón &8» &7%REASON%"
+    - "&6Duración &8» &e%DURATION%"
+    - '&7Amonestaciones totales: &c%COUNT%'
+  Notification:
+    - "&6🕒 &e%NAME% &7fue amonestado temporalmente por &a%OPERATOR%"
+    - "&7Razón: &f%REASON%"
+    - "&7Duración: &e%DURATION%"
+
+Kick:
+  Usage: "&cUso &8» &7/kick (-s) [jugador] [razón/@layout]"
+  Done: "&a✓ &e%NAME% &7ha sido expulsado correctamente"
+  NotOnline: "&c⚠ &e%NAME% &7no está conectado"
+  Exempt: "&cNo puedes expulsar a &e%NAME%"
+  Layout:
+    - '&8&m                                                    '
+    - '&e&l👋 HAS SIDO EXPULSADO'
+    - '&8&m                                                    '
+    - ''
+    - "&cRazón &8» &7%REASON%"
+    - ''
+    - "&7Puedes volver a conectarte inmediatamente"
+    - '&8&m                                                    '
+  Notification:
+    - "&e👋 &e%NAME% &7fue expulsado por &a%OPERATOR%"
+    - "&7Razón: &f%REASON%"
+
+UnBan:
+  Usage: "&cUso &8» &7/unban [jugador/IP]"
+  NotPunished: "&c⚠ &e%NAME% &7no está baneado"
+  Done: "&a✓ &e%NAME% &7ha sido desbaneado correctamente"
+  Notification: "&a✓ &e%NAME% &7fue desbaneado por &a%OPERATOR%"
+
+UnMute:
+  Usage: "&cUso &8» &7/unmute [jugador]"
+  NotPunished: "&c⚠ &e%NAME% &7no está silenciado"
+  Done: "&a✓ &e%NAME% &7ha sido desilenciado correctamente"
+  Notification: "&a✓ &e%NAME% &7fue desilenciado por &a%OPERATOR%"
+
+UnWarn:
+  Usage: "&cUso &8» &7/unwarn [ID] o /unwarn clear [jugador]"
+  NotFound: "&c⚠ No se encontró la amonestación &e#%ID%"
+  Done: "&a✓ Amonestación &e#%ID% &7eliminada correctamente"
+  Notification: "&a✓ Amonestación &e#%ID% &7eliminada por &a%OPERATOR%"
+  Clear:
+    Empty: "&c⚠ &e%NAME% &7no tiene amonestaciones"
+    Done: "&a✓ &e%COUNT% &7amonestación(es) eliminadas"
+
+UnNote:
+  Usage: "&cUso &8» &7/unnote [ID] o /unnote clear [jugador]"
+  NotFound: "&c⚠ No se encontró la nota &e#%ID%"
+  Done: "&a✓ Nota &e#%ID% &7eliminada correctamente"
+  Notification: "&a✓ Nota &e#%ID% &7eliminada por &a%OPERATOR%"
+  Clear:
+    Empty: "&c⚠ &e%NAME% &7no tiene notas"
+    Done: "&a✓ &e%COUNT% &7nota(s) eliminadas"
+
+UnPunish:
+  Usage: "&cUso &8» &7/unpunish [ID]"
+  NotFound: "&c⚠ No se encontró el castigo &e#%ID%"
+  Done: "&a✓ Castigo &e#%ID% &7eliminado correctamente"
+
+Banlist:
+  Usage: "&cUso &8» &7/banlist <página>"
+  OutOfIndex: "&c⚠ No existe la página &e%PAGE%"
+  NoEntries: "&c⚠ No hay entradas para mostrar"
+  Header:
+    - "&8&m                                                    "
+    - "&6&l📋 LISTA DE BANEOS"
+    - "&8&m                                                    "
+    - "&7Formato: &eJugador/IP &8| &6Duración &8| &aBaneado por"
+    - "&7Tipo &8> &fRazón"
+    - ""
+  Entry:
+    - "&8[&e%DATE%&8] &e%NAME% &8| &6%DURATION% &8| &a%OPERATOR%"
+    - "&c%TYPE% &8> &7%REASON%"
+    - ""
+  Footer: "&7Página &e%CURRENT_PAGE% &7de &e%TOTAL_PAGES% &8| &7Total: &e%COUNT%"
+  PageFooter: "&7Usa &e/banlist %NEXT_PAGE% &7para la siguiente página"
+
+History:
+  Usage: "&cUso &8» &7/history [jugador/IP] <página>"
+  OutOfIndex: "&c⚠ No existe la página &e%PAGE%"
+  NoEntries: "&c⚠ No se encontró historial de &e%NAME%"
+  Header:
+    - "&8&m                                                    "
+    - "&6&l📚 HISTORIAL DE %NAME%"
+    - "&8&m                                                    "
+    - "&7Formato: &eFecha &8| &6Duración &8| &aOperador"
+    - "&7Tipo &8> &fRazón"
+    - ""
+  Entry:
+    - "&8[&e%DATE%&8] &e%NAME% &8| &6%DURATION% &8| &a%OPERATOR%"
+    - "&c%TYPE% &8> &7%REASON%"
+    - ""
+  Footer: "&7Página &e%CURRENT_PAGE% &7de &e%TOTAL_PAGES% &8| &7Total: &e%COUNT%"
+  PageFooter: "&7Usa &e/history %NAME% %NEXT_PAGE% &7para la siguiente página"
+
+Warns:
+  Usage: "&cUso &8» &7/warns [jugador] <página>"
+  OutOfIndex: "&c⚠ No existe la página &e%PAGE%"
+  NoEntries: "&a✓ No tienes amonestaciones"
+  Header:
+    - "&8&m                                                    "
+    - "&e&l⚠ TUS AMONESTACIONES"
+    - "&8&m                                                    "
+    - "&7Formato: &6Duración &8| &aAmonestado por"
+    - "&7ID &8> &fRazón"
+    - ""
+  Entry:
+    - "&8[&e%DATE%&8] &6%DURATION% &8| &a%OPERATOR%"
+    - "&c#%ID% &8> &7%REASON%"
+    - ""
+  Footer: "&7Página &e%CURRENT_PAGE% &7de &e%TOTAL_PAGES% &8| &7Activas: &c%COUNT%"
+  PageFooter: "&7Usa &e/warns %NEXT_PAGE% &7para la siguiente página"
+
+Notes:
+  Usage: "&cUso &8» &7/notes [jugador] <página>"
+  OutOfIndex: "&c⚠ No existe la página &e%PAGE%"
+  NoEntries: "&c⚠ &e%NAME% &7no tiene notas"
+  Header:
+    - "&8&m                                                    "
+    - "&7&l📝 NOTAS DE %NAME%"
+    - "&8&m                                                    "
+    - ""
+  Entry:
+    - "&7%DATE% &8| &aPor %OPERATOR% &7(&c#%ID%&7)"
+    - "&8> &f%REASON%"
+    - ""
+  Footer: "&7Página &e%CURRENT_PAGE% &7de &e%TOTAL_PAGES% &8| &7Total: &e%COUNT%"
+  PageFooter: "&7Usa &e/notes %NAME% %NEXT_PAGE% &7para la siguiente página"
+
+NotesOwn:
+  OutOfIndex: "&c⚠ No existe la página &e%PAGE%"
+  NoEntries: "&a✓ No tienes notas"
+  Header:
+    - "&8&m                                                    "
+    - "&7&l📝 TUS NOTAS"
+    - "&8&m                                                    "
+    - ""
+  Entry:
+    - "&7%DATE% &8| &aPor %OPERATOR% &7(&c#%ID%&7)"
+    - "&8> &f%REASON%"
+    - ""
+  Footer: "&7Página &e%CURRENT_PAGE% &7de &e%TOTAL_PAGES% &8| &7Total: &e%COUNT%"
+  PageFooter: "&7Usa &e/notes %NEXT_PAGE% &7para la siguiente página"
+
+WarnsOwn:
+  OutOfIndex: "&c⚠ No existe la página &e%PAGE%"
+  NoEntries: "&a✓ No tienes amonestaciones"
+  Header:
+    - "&8&m                                                    "
+    - "&e&l⚠ TUS AMONESTACIONES"
+    - "&8&m                                                    "
+    - "&7Formato: &6Duración &8| &aAmonestado por"
+    - "&7ID &8> &fRazón"
+    - ""
+  Entry:
+    - "&8[&e%DATE%&8] &6%DURATION% &8| &a%OPERATOR%"
+    - "&c#%ID% &8> &7%REASON%"
+    - ""
+  Footer: "&7Página &e%CURRENT_PAGE% &7de &e%TOTAL_PAGES% &8| &7Activas: &c%COUNT%"
+  PageFooter: "&7Usa &e/warns %NEXT_PAGE% &7para la siguiente página"
+
+ChangeReason:
+  Usage: "&cUso &8» &7/change-reason [ID o ban/mute jugador] [nueva razón]"
+  Done: "&a✓ Castigo &e#%ID% &7actualizado correctamente"
+  NotFound: "&c⚠ No se encontró el castigo especificado"
+
+Check:
+  Usage: "&cUso &8» &7/check [jugador]"
+  Header: "&8&m                                                    "
+  HeaderTitle: "&6&l🔍 INFORMACIÓN DE %NAME%"
+  HeaderSeparator: "&8&m                                                    "
+  UUID: "&7UUID: &e%UUID% &8%CACHED%"
+  IP: "&7IP: &e%IP% &8%CACHED%"
+  Geo: "&7País: &e%LOCATION%"
+  Mute: "&7Silenciado: &c%DURATION%"
+  MuteReason: "&7  Razón: &f%REASON%"
+  Ban: "&7Baneado: &c%DURATION%"
+  BanReason: "&7  Razón: &f%REASON%"
+  Warn: "&7Amonestaciones: &e%COUNT%"
+  Note: "&7Notas: &e%COUNT%"
+  NotFound: "&c⚠ No se pudo encontrar información de &e%NAME%"
+  Cached: "&a(cached)"
+  NotCached: "&c(no cached)"

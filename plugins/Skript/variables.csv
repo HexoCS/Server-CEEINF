@@ -1,0 +1,15 @@
+# === Skript's variable storage ===
+# Please do not modify this file manually!
+#
+# version: 2.11.2
+
+combat.3fc36cd9-2e99-4748-b126-bf3aba19728f, long, 0000000000000000
+combat.465e8fd1-c60e-4392-9e3b-30d73fc74c3f, double, 41DA1CAEFA90F5C3
+gsit.traducido, boolean, 01
+gsit.version, string, 8003312E30
+pvp.3fc36cd9-2e99-4748-b126-bf3aba19728f, boolean, 00
+pvp.45294351-c8ff-42e6-8890-8cd2af98d1e7, boolean, 01
+pvp.465e8fd1-c60e-4392-9e3b-30d73fc74c3f, boolean, 01
+pvp.cooldown.3fc36cd9-2e99-4748-b126-bf3aba19728f, double, 41DA1CB2FB709375
+pvp.cooldown.465e8fd1-c60e-4392-9e3b-30d73fc74c3f, double, 41DA1CAE5EAF8D50
+
