@@ -41,8 +41,8 @@ world_the_end/
 # plugins/GriefPreventionData/
 
 # Databases
-*.db
-*.db-journal
+#*.db
+#*.db-journal
 
 # Backups
 backups/
