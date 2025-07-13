@@ -1,0 +1,200 @@
+# Translation config for the AuthMe help, e.g. when /authme help or /authme help register is called
+
+# -------------------------------------------------------
+# List of texts used in the help section
+common:
+    header: '&f&lStackOverworld &a&lAuth &r&8&m          &r &6&lAYUDA &8&m          '
+    optional: '&7(Opcional)'
+    hasPermission: '&a✓ Tienes permiso'
+    noPermission: '&c⚠ Sin permiso'
+    default: '&7Por defecto'
+    result: '&7Resultado'
+    defaultPermissions:
+        notAllowed: '&c⚠ Sin permiso'
+        opOnly: '&6⭐ Solo OPs'
+        allowed: '&a✓ Todos pueden usar'
+
+# -------------------------------------------------------
+# Titles of the individual help sections
+# Set the translation text to empty text to disable the section, e.g. to hide alternatives:
+#   alternatives: ''
+section:
+    command: '&e&lComando'
+    description: '&7&lDescripción'
+    detailedDescription: '&7&lDescripción Detallada'
+    arguments: '&b&lArgumentos'
+    permissions: '&d&lPermisos'
+    alternatives: '&6&lAlternativas'
+    children: '&a&lSubcomandos'
+
+# -------------------------------------------------------
+# You can translate the data for all commands using the below pattern.
+# For example to translate /authme reload, create a section "authme.reload", or "login" for /login
+# If the command has arguments, you can use arg1 as below to translate the first argument, and so forth
+# Translations don't need to be complete; any missing section will be taken from the default silently
+# Important: Put main commands like "authme" before their children (e.g. "authme.reload")
+commands:
+    # Comando principal de login
+    login:
+        description: 'Iniciar sesión'
+        detailedDescription: 'Inicia sesión en el servidor con tu contraseña registrada.'
+        arg1:
+            label: 'contraseña'
+            description: 'Tu contraseña secreta'
+    
+    # Comando de registro
+    register:
+        description: 'Registrarse'
+        detailedDescription: 'Registra una nueva cuenta en el servidor con una contraseña segura.'
+        arg1:
+            label: 'contraseña'
+            description: 'Contraseña a usar (mínimo 5 caracteres)'
+        arg2:
+            label: 'confirmar'
+            description: 'Confirma tu contraseña'
+    
+    # Comando de cambiar contraseña
+    changepassword:
+        description: 'Cambiar contraseña'
+        detailedDescription: 'Cambia tu contraseña actual por una nueva.'
+        arg1:
+            label: 'actual'
+            description: 'Tu contraseña actual'
+        arg2:
+            label: 'nueva'
+            description: 'Tu nueva contraseña'
+    
+    # Comando de logout
+    logout:
+        description: 'Cerrar sesión'
+        detailedDescription: 'Cierra tu sesión actual. Tendrás que hacer login de nuevo.'
+    
+    # Comando de unregister
+    unregister:
+        description: 'Eliminar cuenta'
+        detailedDescription: 'Elimina permanentemente tu cuenta del servidor.'
+        arg1:
+            label: 'contraseña'
+            description: 'Tu contraseña actual para confirmar'
+    
+    # Comandos administrativos
+    authme:
+        description: 'Comandos de administración'
+        detailedDescription: 'Comandos administrativos para gestionar AuthMe.'
+    
+    authme.register:
+        description: 'Registrar jugador'
+        detailedDescription: 'Registra a un jugador específico con la contraseña indicada.'
+        arg1:
+            label: 'jugador'
+            description: 'Nombre del jugador'
+        arg2:
+            label: 'contraseña'
+            description: 'Contraseña para el jugador'
+    
+    authme.unregister:
+        description: 'Eliminar registro'
+        detailedDescription: 'Elimina el registro de un jugador del sistema.'
+        arg1:
+            label: 'jugador'
+            description: 'Nombre del jugador'
+    
+    authme.forcelogin:
+        description: 'Forzar login'
+        detailedDescription: 'Fuerza el login de un jugador sin necesidad de contraseña.'
+        arg1:
+            label: 'jugador'
+            description: 'Nombre del jugador'
+    
+    authme.password:
+        description: 'Cambiar contraseña'
+        detailedDescription: 'Cambia la contraseña de un jugador como administrador.'
+        arg1:
+            label: 'jugador'
+            description: 'Nombre del jugador'
+        arg2:
+            label: 'contraseña'
+            description: 'Nueva contraseña'
+    
+    authme.lastlogin:
+        description: 'Último login'
+        detailedDescription: 'Muestra información del último login de un jugador.'
+        arg1:
+            label: 'jugador'
+            description: 'Nombre del jugador'
+    
+    authme.accounts:
+        description: 'Ver cuentas'
+        detailedDescription: 'Muestra todas las cuentas registradas desde una IP.'
+        arg1:
+            label: 'jugador'
+            description: 'Nombre del jugador'
+    
+    authme.reload:
+        description: 'Recargar config'
+        detailedDescription: 'Recarga la configuración de AuthMe sin reiniciar.'
+    
+    authme.version:
+        description: 'Ver versión'
+        detailedDescription: 'Muestra la versión actual de AuthMe instalada.'
+    
+    authme.spawn:
+        description: 'Ir al spawn'
+        detailedDescription: 'Teletransporta al jugador al punto de spawn.'
+    
+    authme.setspawn:
+        description: 'Establecer spawn'
+        detailedDescription: 'Establece el punto de spawn actual como spawn de AuthMe.'
+    
+    authme.purge:
+        description: 'Limpiar datos'
+        detailedDescription: 'Elimina cuentas inactivas por más de X días.'
+        arg1:
+            label: 'días'
+            description: 'Días de inactividad'
+    
+    authme.backup:
+        description: 'Crear backup'
+        detailedDescription: 'Crea una copia de seguridad de la base de datos.'
+    
+    authme.getemail:
+        description: 'Ver email'
+        detailedDescription: 'Muestra el email registrado de un jugador.'
+        arg1:
+            label: 'jugador'
+            description: 'Nombre del jugador'
+    
+    authme.chgemail:
+        description: 'Cambiar email'
+        detailedDescription: 'Cambia el email de un jugador como administrador.'
+        arg1:
+            label: 'jugador'
+            description: 'Nombre del jugador'
+        arg2:
+            label: 'email'
+            description: 'Nuevo email'
+    
+    authme.getip:
+        description: 'Ver IP'
+        detailedDescription: 'Muestra la IP registrada de un jugador.'
+        arg1:
+            label: 'jugador'
+            description: 'Nombre del jugador'
+    
+    authme.switchantibot:
+        description: 'Alternar AntiBot'
+        detailedDescription: 'Activa o desactiva la protección AntiBot.'
+        arg1:
+            label: 'modo'
+            description: 'on/off'
+    
+    authme.converter:
+        description: 'Convertir datos'
+        detailedDescription: 'Convierte datos desde otro plugin de autenticación.'
+        arg1:
+            label: 'tipo'
+            description: 'Tipo de conversión'
+    
+    authme.messages:
+        description: 'Recargar mensajes'
+        detailedDescription: 'Recarga solo los archivos de mensajes/idioma.'

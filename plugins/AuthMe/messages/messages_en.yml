@@ -1,0 +1,156 @@
+# List of global tags:
+# %nl% - Goes to new line.
+# %username% - Replaces the username of the player receiving the message.
+# %displayname% - Replaces the nickname (and colors) of the player receiving the message.
+
+# Registration
+registration:
+  register_request: '&f&lStackOverworld &a&lAuth &r&7Por favor regístrate con: &e/register <contraseña> <confirmar>'
+  command_usage: '&f&lStackOverworld &a&lAuth &r&cUso &8» &7/register <contraseña> <confirmar>'
+  reg_only: '&c¡Solo usuarios registrados pueden unirse! Visita nuestro Discord para más info.'
+  kicked_admin_registered: '&a✓ Un admin te registró, vuelve a conectarte.'
+  success: '&f&lStackOverworld &a&lAuth &r&a✓ ¡Registro exitoso! Ahora inicia sesión.'
+  disabled: '&f&lStackOverworld &a&lAuth &r&c⚠ El registro está deshabilitado.'
+  name_taken: '&f&lStackOverworld &a&lAuth &r&c⚠ Este nombre ya está registrado.'
+
+# Password errors on registration
+password:
+  match_error: '&f&lStackOverworld &a&lAuth &r&c⚠ Las contraseñas no coinciden.'
+  name_in_password: '&f&lStackOverworld &a&lAuth &r&c⚠ No puedes usar tu nombre como contraseña.'
+  unsafe_password: '&f&lStackOverworld &a&lAuth &r&c⚠ Contraseña insegura, elige otra.'
+  forbidden_characters: '&f&lStackOverworld &a&lAuth &r&c⚠ Caracteres no permitidos. Permitidos: %valid_chars'
+  wrong_length: '&f&lStackOverworld &a&lAuth &r&c⚠ Contraseña muy corta o larga.'
+
+# Login
+login:
+  command_usage: '&f&lStackOverworld &a&lAuth &r&cUso &8» &7/login <contraseña>'
+  wrong_password: '&f&lStackOverworld &a&lAuth &r&c⚠ Contraseña incorrecta.'
+  success: '&f&lStackOverworld &a&lAuth &r&a✓ ¡Sesión iniciada correctamente!'
+  login_request: '&f&lStackOverworld &a&lAuth &r&7Por favor inicia sesión: &e/login <contraseña>'
+  timeout_error: '&f&lStackOverworld &a&lAuth &r&c⚠ Tiempo agotado para iniciar sesión.'
+
+# Errors
+error:
+  unregistered_user: '&f&lStackOverworld &a&lAuth &r&c⚠ Este usuario no está registrado.'
+  denied_command: '&f&lStackOverworld &a&lAuth &r&c⚠ Debes estar autenticado para usar comandos.'
+  denied_chat: '&f&lStackOverworld &a&lAuth &r&c⚠ Debes estar autenticado para chatear.'
+  not_logged_in: '&f&lStackOverworld &a&lAuth &r&c⚠ No has iniciado sesión.'
+  tempban_max_logins: '&f&lStackOverworld &a&lAuth &r&c⚠ Baneado temporalmente por intentos fallidos.'
+  max_registration: '&f&lStackOverworld &a&lAuth &r&c⚠ Máximo de cuentas alcanzado (%reg_count/%max_acc)'
+  no_permission: '&f&lStackOverworld &a&lAuth &r&c⚠ No tienes permisos para esto.'
+  unexpected_error: '&f&lStackOverworld &a&lAuth &r&c⚠ Error inesperado, contacta al staff.'
+  kick_for_vip: '&f&lStackOverworld &a&lAuth &r&6⭐ Un VIP se conectó con el servidor lleno.'
+  logged_in: '&f&lStackOverworld &a&lAuth &r&a✓ Ya tienes la sesión iniciada.'
+  kick_unresolved_hostname: '&f&lStackOverworld &a&lAuth &r&c⚠ Error de conexión.'
+
+# AntiBot
+antibot:
+  kick_antibot: '&f&lStackOverworld &a&lAuth &r&c🛡️ Protección AntiBot activa. Espera unos minutos.'
+  auto_enabled: '&f&lStackOverworld &a&lAuth &r&c🛡️ AntiBot activado por conexiones masivas.'
+  auto_disabled: '&f&lStackOverworld &a&lAuth &r&a✓ AntiBot desactivado después de %m minutos.'
+
+unregister:
+  success: '&f&lStackOverworld &a&lAuth &r&a✓ Cuenta eliminada correctamente.'
+  command_usage: '&f&lStackOverworld &a&lAuth &r&cUso &8» &7/unregister <contraseña>'
+
+# Other messages
+misc:
+  accounts_owned_self: '&f&lStackOverworld &a&lAuth &r&7Tienes &e%count &7cuenta(s) registrada(s):'
+  accounts_owned_other: '&f&lStackOverworld &a&lAuth &r&7El jugador &e%name &7tiene &e%count &7cuenta(s):'
+  account_not_activated: '&f&lStackOverworld &a&lAuth &r&c⚠ Cuenta no activada, contacta al staff.'
+  password_changed: '&f&lStackOverworld &a&lAuth &r&a✓ Contraseña cambiada correctamente.'
+  logout: '&f&lStackOverworld &a&lAuth &r&a✓ Sesión cerrada correctamente.'
+  reload: '&f&lStackOverworld &a&lAuth &r&a✓ Configuración recargada.'
+  usage_change_password: '&f&lStackOverworld &a&lAuth &r&cUso &8» &7/changepassword <actual> <nueva>'
+
+# Session messages
+session:
+  invalid_session: '&f&lStackOverworld &a&lAuth &r&c⚠ Tu IP cambió, sesión expirada.'
+  valid_session: '&f&lStackOverworld &a&lAuth &r&a✓ Sesión restablecida automáticamente.'
+
+# Error messages when joining
+on_join_validation:
+  name_length: '&f&lStackOverworld &a&lAuth &r&c⚠ Nombre muy corto o largo.'
+  characters_in_name: '&f&lStackOverworld &a&lAuth &r&c⚠ Caracteres no permitidos: %valid_chars'
+  country_banned: '&f&lStackOverworld &a&lAuth &r&c⚠ Tu país está restringido.'
+  not_owner_error: '&f&lStackOverworld &a&lAuth &r&c⚠ No eres el propietario de esta cuenta.'
+  kick_full_server: '&f&lStackOverworld &a&lAuth &r&c⚠ Servidor lleno, intenta más tarde.'
+  same_nick_online: '&f&lStackOverworld &a&lAuth &r&c⚠ Este nombre ya está conectado.'
+  invalid_name_case: '&f&lStackOverworld &a&lAuth &r&c⚠ Usa &e%valid&c, no &e%invalid&c.'
+  same_ip_online: '&f&lStackOverworld &a&lAuth &r&c⚠ Una cuenta con tu IP ya está conectada.'
+  quick_command: '&f&lStackOverworld &a&lAuth &r&c⚠ Comando usado muy rápido, reconéctate.'
+
+# Email (Disabled)
+email:
+  usage_email_add: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  usage_email_change: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  new_email_invalid: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  old_email_invalid: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  invalid: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  added: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  request_confirmation: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  changed: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  email_show: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  incomplete_settings: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  already_used: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  send_failure: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  no_email_for_account: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  add_email_request: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  change_password_expired: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  email_cooldown_error: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  add_not_allowed: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+  change_not_allowed: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de emails deshabilitado.'
+
+# Password recovery (Disabled)
+recovery:
+  forgot_password_hint: '&f&lStackOverworld &a&lAuth &r&7¿Olvidaste tu contraseña? Contacta al staff en Discord.'
+  command_usage: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de recuperación deshabilitado.'
+  email_sent: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de recuperación deshabilitado.'
+  code:
+    code_sent: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de recuperación deshabilitado.'
+    incorrect: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de recuperación deshabilitado.'
+    tries_exceeded: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de recuperación deshabilitado.'
+    correct: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de recuperación deshabilitado.'
+    change_password: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de recuperación deshabilitado.'
+
+# Captcha (Disabled)
+captcha:
+  usage_captcha: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de captcha deshabilitado.'
+  wrong_captcha: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de captcha deshabilitado.'
+  valid_captcha: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de captcha deshabilitado.'
+  captcha_for_registration: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de captcha deshabilitado.'
+  register_captcha_valid: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de captcha deshabilitado.'
+
+# Verification code (Disabled)
+verification:
+  code_required: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de verificación deshabilitado.'
+  command_usage: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de verificación deshabilitado.'
+  incorrect_code: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de verificación deshabilitado.'
+  success: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de verificación deshabilitado.'
+  already_verified: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de verificación deshabilitado.'
+  code_expired: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de verificación deshabilitado.'
+  email_needed: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema de verificación deshabilitado.'
+
+# Two-factor authentication (Disabled)
+two_factor:
+  code_created: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema 2FA deshabilitado.'
+  confirmation_required: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema 2FA deshabilitado.'
+  code_required: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema 2FA deshabilitado.'
+  already_enabled: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema 2FA deshabilitado.'
+  enable_error_no_code: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema 2FA deshabilitado.'
+  enable_success: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema 2FA deshabilitado.'
+  enable_error_wrong_code: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema 2FA deshabilitado.'
+  not_enabled_error: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema 2FA deshabilitado.'
+  removed_success: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema 2FA deshabilitado.'
+  invalid_code: '&f&lStackOverworld &a&lAuth &r&c⚠ Sistema 2FA deshabilitado.'
+
+# Time units
+time:
+  second: 'segundo'
+  seconds: 'segundos'
+  minute: 'minuto'
+  minutes: 'minutos'
+  hour: 'hora'
+  hours: 'horas'
+  day: 'día'
+  days: 'días'
