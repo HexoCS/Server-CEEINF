@@ -7,7 +7,6 @@ cache/
 .paper/
 
 # Server runtime files
-server.properties
 eula.txt
 usercache.json
 usernamecache.json
@@ -40,10 +39,6 @@ world_the_end/
 # plugins/Dynmap/
 # plugins/LuckPerms/
 # plugins/GriefPreventionData/
-
-# Server JARs (download manually)
-*.jar
-!paper-*.jar
 
 # Databases
 *.db
