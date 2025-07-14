@@ -161,6 +161,8 @@ world-settings:
     thunder-chance: 100000
     max-tnt-per-tick: 100
     verbose: false
+  worldeditregentempworld:
+    verbose: false
 players:
   disable-saving: false
 config-version: 12
